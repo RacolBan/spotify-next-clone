@@ -3,9 +3,9 @@ import Sidebar from 'components/Sidebar';
 
 export default function Home() {
   return (
-   <div className='m-2 p-4'>
-    <Sidebar /> 
-    <Center />  
+   <div className='h-screen flex overflow-hidden'>
+      <Sidebar /> 
+      <Center />  
    </div>
   )
 }

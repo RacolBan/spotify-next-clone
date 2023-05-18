@@ -2,9 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .icon{
+    @apply h-3 w-3 lg:h-4 lg:w-4 mr-1;
+  }
+}
 
 @layer base {
-  
+  html{
+    @apply text-slate-400/50 ;
+  }
   .btn{
     @apply px-4 py-2 rounded-lg disabled:bg-slate-400/20 text-white 
   }
@@ -29,4 +36,14 @@
   label{
     @apply text-slate-700 font-medium pb-1 leading-4
   }
+}
+@layer utilities {
+  .scroll-hidden::-webkit-scrollbar {
+    display: none;
+  } 
+.scroll-hidden {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+  
 }
